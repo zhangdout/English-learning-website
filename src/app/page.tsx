@@ -1,29 +1,7 @@
 import React from "react";
+import Breadcrumb from "@/components/Breadcrumb";
+import Footer from "@/components/Footer";
 
-// Breadcrumb component
-const Breadcrumb = () => {
-  return (
-    <nav aria-label="breadcrumb" className="breadcrumb">
-      <ol>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li aria-current="page">Features</li>
-      </ol>
-    </nav>
-  );
-};
-
-// Footer component
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <p>Authors: Evan Zhang and Mona Sun</p>
-    </footer>
-  );
-};
-
-// Home Page layout
 export default function HomePage() {
   return (
     <div className="container">
@@ -31,10 +9,10 @@ export default function HomePage() {
       <header>
         <h1>English Learning Website</h1>
       </header>
-
+      
       {/* Breadcrumb */}
       <Breadcrumb />
-
+      
       {/* Main Features */}
       <main className="features">
         <section>
@@ -47,7 +25,7 @@ export default function HomePage() {
           <h2>Practice</h2>
         </section>
       </main>
-
+      
       {/* Footer */}
       <Footer />
     </div>
